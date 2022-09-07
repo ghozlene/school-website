@@ -38,3 +38,19 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+const menu = document.querySelector('.nav__menu');
+const menuBtn = document.querySelector('#open-menu-btn');
+const closeBtn = document.querySelector('#close-menu-btn');
+menuBtn.addEventListener('click', () => {
+	menu.style.display = 'flex';
+	closeBtn.style.display = 'inline-block';
+	menuBtn.style.display = 'none';
+	menu.style.transition = --transition;
+});
+
+closeBtn.addEventListener('click', () => {
+	menu.style.display = 'none';
+	menuBtn.style.display = 'inline-block';
+	closeBtn.style.display = 'none';
+});
