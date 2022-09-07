@@ -172,7 +172,7 @@ header {
 .categories__container {
 	display: grid;
 	grid-template-columns: 40% 60%;
-	gap: 4rem;
+	gap: 1.5rem;
 }
 .categories__left {
 	margin-right: 5rem;
@@ -231,5 +231,36 @@ header {
 
 .window-scroll {
 	background: var(--color-primary);
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+.courses {
+	margin-top: 10rem;
+}
+
+.courses__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.course {
+	background-color: var(--color-bg1);
+	text-align: center;
+	border: 1px solid transparent;
+}
+.course:hover {
+	background-color: transparent;
+	border-color: var(--color-primary);
+	box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.7);
+	transition: var(--transition);
+}
+
+.course__info {
+	padding: 2rem;
+}
+
+.course__info p {
+	margin: 1.2rem 0 2rem;
+	font-size: 0.95rem;
 }
